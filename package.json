@@ -1,0 +1,26 @@
+{
+  "name": "kaunto-test",
+  "version": "1.0.0",
+  "description": "test task with REST API",
+  "main": "src/server.ts",
+  "scripts": {
+    "start-server": "ts-node ./src/server.ts",
+    "server": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/server.ts",
+    "prettier": "prettier --write \"{src/**/*.{ts,js,jsx,css},src/**/*.{ts,js,jsx,css}}\""
+  },
+  "repository": "git@github.com:msklyarov/kaunto-test.git",
+  "author": "Maxim Sklyarov <sklyarov.ma@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "1.11.0",
+    "prettier": "^1.17.0",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.4",
+    "mongodb": "^3.2.3",
+    "ramda": "^0.26.1"
+  }
+}
